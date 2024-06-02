@@ -1,6 +1,5 @@
 
 from .distributions import Bernoulli, Categorical, DiagGaussian
-import math
 import numpy as np
 
 import torch

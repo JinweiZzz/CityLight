@@ -4,8 +4,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from .vit import Attention, PreNorm, Transformer, CrossAttention, FeedForward, PreNormDouble, CrossAttention_Querydimchanged
-from einops import rearrange
-import random
 
 class Invariant(nn.Module):
     def __init__(self, input_dim, invariant_type = "type_attn", hidden_dim=128, heads=4, dim_head=32, mlp_dim=128, dropout=0., depth=1, distance=0, neighbor_dim=None):

@@ -4,7 +4,6 @@ import pickle
 import random
 import sys
 import time
-import signal
 import setproctitle
 
 import numpy as np
