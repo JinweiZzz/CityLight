@@ -33,9 +33,12 @@ Due to the size limit of github, we have stored the data in an anonymous google 
 ### Dependency for Simulation Environment
 To achieve high-fidelity city-scale traffic simulation, we incorporate MOSS (MObility Simulation System) as our simulation environment. The detailed introduction of MOSS can be refered to in: https://arxiv.org/abs/2405.12520. The installation process of MOSS is detailed in: https://github.com/tsinghua-fib-lab/moss?tab=readme-ov-file. 
 
+Specifically, the only operation you need to install the environment is to run the following command:
+```pip install python-moss```
+
 ### Other Dependencies
 1. Install Pytorch with the correct CUDA version.
-2. Use the ```pip install -r requirements.txt``` command all other Python modules and packages used in this project.
+2. Use the ```pip install -r requirements.txt``` command for all other Python modules and packages used in this project.
 
 
 ## Config 
