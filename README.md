@@ -33,9 +33,18 @@ Due to the size limit of github, we have stored the data in an anonymous google 
 ### Dependency for Simulation Environment
 To achieve high-fidelity city-scale traffic simulation, we incorporate MOSS (MObility Simulation System) as our simulation environment. The detailed introduction of MOSS can be refered to in: https://arxiv.org/abs/2405.12520. To install MOSS, you have to follow these instructions (under this directory):
 
-1. docker build -t simulet .            # construct the docker
-2. docker run --runtime=nvidia --gpus all --name simulet --mount type=bind,source=/absolute_path_of_this_directory,target=/root/TSC-example -d simulet      # start the docker and mount the outside data to the directory inside docker.
-3. docker exec -w /root -it simulet zsh
+1. construct the docker
+```
+docker build -t simulet . 
+```
+2. start the docker and mount the outside data to the directory inside docker.
+```
+docker run --runtime=nvidia --gpus all --name simulet --mount type=bind,source=/absolute_path_of_this_directory,target=/root/TSC-example -d simulet     
+```
+3. enter the docker
+```
+docker exec -w /root -it simulet zsh
+```
 
 ### Other Dependencies
 1. Use the ```pip install -r TSC-example/requirements.txt``` command for all other Python modules and packages used in this project.
